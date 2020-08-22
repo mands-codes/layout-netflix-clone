@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*evita que os elementos passem do limite da caixa*/
+}
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+header .container{
+display: flex;
+flex-direction: row; /*padrao, mesmo que nao declare, ela entra automatico*/
+align-items: center;
+justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+text-decoration: none;
+color: #AAA;
+margin-right: 10px;
+font-family: 'Baloo Tamma 2', cursive;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.titulo{
+    margin-top: 15%;
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/killingeve_capa.jpeg') no-repeat;   
+    background-position: right; 
+    background-color: black;
+    height: 400px;
+/* background-size: cover; /*cobertura*/
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start; /*elementos começam da esquerda para direita*/
+}
+
+.filme-principal .descricao{
+   margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 15px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+
+    transition: .4s ease all ;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+   
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+	transform: scale(1.1);
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+h2{
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: 10px;
+}
